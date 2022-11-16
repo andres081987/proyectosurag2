@@ -18,3 +18,9 @@
     padding: 20%;
     background-attachment: fixed;
 }
+.footer{
+    text-align: center;
+    padding: 3px;
+    background-color: #0033a0;
+    color: white;
+}

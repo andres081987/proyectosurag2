@@ -26,7 +26,8 @@ let datosFormularioMedico={
     descripcion:descripcionMedico,
     foto:fotoMedico
 }
-console.log(datosFormularioMedico)
+
+validarFormulario(datosFormularioMedico);
 
 
 }

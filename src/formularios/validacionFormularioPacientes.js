@@ -1,18 +1,17 @@
 export function validarFormulario(datos){
 
     //REFERENCIAS A ETIQUETAS QUE QUIERO VALIDAR
-    let etiquetaNombre=document.getElementById("nombres")
-    let etiquetaDocumento=document.getElementById("documento")
+    let etiquetaNombre=document.getElementById("nombrespacientes")
+    let etiquetaDocumento=document.getElementById("documentopaciente")
     //let etiquetaRegistro=document.getElementById("registro")
     
     //Validar 3 campos del fomrulario
     //Nombres-documento-registro del medico
-    let nombresMedico=datos.nombre
-    let documentoMedico=datos.documento
-    let registroMedico=datos.registro
+    let nombresPacientes=datos.nombre
+    let documentoPaciente=datos.documento
     
     //AGREGAR TODOS LOS CAMINOS POSIBLES PARA VALIDAR EL FORMUALRIO
-    if(nombresMedico=="" && documentoMedico=="" && registroMedico==""){
+    if(nombresPacientes=="" && documentoPaciente==""){
         etiquetaNombre.classList.add("is-invalid")
         etiquetaDocumento.classList.add("is-invalid")
         //etiquetaRegistro.classList.add("is-invalid")
@@ -21,7 +20,7 @@ export function validarFormulario(datos){
             title: 'Oops...',
             text: 'Nombre, documento y registro son obligatorios',
           })
-    }else if(nombresMedico==""&& documentoMedico!=""&& registroMedico!=""){
+    }else if(nombresPacientes==""&& documentoPaciente!=""){
         etiquetaNombre.classList.add("is-invalid")
         etiquetaDocumento.classList.remove("is-invalid")
         //etiquetaRegistro.classList.remove("is-invalid")
@@ -30,7 +29,7 @@ export function validarFormulario(datos){
             title: 'Oops...',
             text: 'El nombre es obligatorio',
           })
-    }else if(nombresMedico!=""&& documentoMedico==""&& registroMedico!=""){
+    }else if(nombresPacientes!=""&& documentoPaciente==""){
         etiquetaNombre.classList.remove("is-invalid")
         etiquetaDocumento.classList.add("is-invalid")
         //etiquetaRegistro.classList.remove("is-invalid")

@@ -16,7 +16,7 @@ let fotoMedico=etiquetaFoto.value
 // Debemos almacenar todos los valores del formulario en una sola variable
 //Obetjo=almacenar varios datos en 1soloespacio de memoria
 let datosFormularioMedico={
-    nombre:nombreMedico,
+    nombres:nombreMedico,
     documento:documentoMedico,
     especialidad:especialidadMedico,
     registro:registroMedico,
@@ -24,7 +24,7 @@ let datosFormularioMedico={
     sede:sedeMedico,
     horario:horarioMedico,
     descripcion:descripcionMedico,
-    foto:fotoMedico
+    fotografia:fotoMedico
 }
 
 validarFormulario(datosFormularioMedico);
